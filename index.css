@@ -1,0 +1,657 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'verdana', sans-serif;
+}
+body{
+    background: #060917;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #060917;
+    width: 100%;
+    padding: 1.2rem 5rem;
+    border-bottom: .5px solid #5d5f60;
+    font-size: 35px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+ }
+header .logo a{
+    color: #e0e0e0;
+}
+header .logo a span{
+    color: #e40d0d;
+    font-style: italic;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    font-size: 25px;
+}
+header .navbar a{
+    color: #e0e0e0;
+    padding: 5px;
+    transition: .5s;
+}
+header .navbar a:hover{
+    background-color: #e0e0e0;
+    color: #060917;
+}
+header nav a{
+    text-decoration: none;
+}
+
+
+
+main.start{
+    padding: 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main.startContent{
+    width: 90%;
+    padding: 2rem ;
+    border-right: .5px solid #5d5f60;
+    border-left: .5px solid #5d5f60;
+}
+.home{
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.home .infoPrincipales{
+    color: #e0e0e0;
+   height: auto;
+    width: 100%;
+}
+.home .infoPrincipales h2{
+    font-weight: 300;
+    color: #e0e0e0af;
+    font-size: 2.2rem;
+
+}
+.home .infoPrincipales p{
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
+.home .infoPrincipales p span{
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    color: #e40d0d;
+}
+
+.sectionOne{
+    width: 100%;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center; 
+}
+.sectionOne h1{
+    font-size: 2.2rem;
+    margin: 50px 0 0 0;
+}
+.sectionOne article{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+   
+}
+.myservices{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;  
+    padding: 40px;
+}
+.myservices .servicesMicrosoft,
+.myservices .servicesWebSites, 
+.myservices .servicesElectricité{
+    background: #060917a5;
+    box-shadow: -1px 1px 2px #e40d0d;
+    text-align: start;
+    border-radius: 0px;
+    padding: 20px;
+    width: 30%;
+    transition:all .5s linear;
+}
+.myservices .servicesMicrosoft:hover,
+.myservices .servicesWebSites:hover, 
+.myservices .servicesElectricité:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+    
+}
+.myservices .servicesMicrosoft h2,
+.myservices .servicesWebSites h2, 
+.myservices .servicesElectricité h2{
+    margin-top: 30px;
+    font-size: 1.5rem;
+}
+.myservices .servicesMicrosoft p:nth-child(1),
+.myservices .servicesWebSites p:nth-child(1), 
+.myservices .servicesElectricité p:nth-child(1){
+    color: #0067d4;
+    font-size: 2.5rem;
+}
+.myservices .servicesMicrosoft #p2,
+.myservices .servicesWebSites #p2, 
+.myservices .servicesElectricité #p2{
+    margin-top: 30px;
+    word-break: break-all;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+
+.servicesMicrosoft strong{
+    color: #0067d4;
+}
+
+
+
+.sectionTwo{
+    width: 100%;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.sectionTwo h1{
+    font-size: 2.2rem;
+    margin-bottom: 100px;
+}
+.sectionTwo .myWork{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.sectionTwo .myWork .image{
+    position: relative;
+    width: 100%;
+}
+
+.sectionTwo .myWork .image img{
+    border-radius: 15px;
+    transition: .5s;
+    width: 100%;
+    padding: 20px;
+    transition:all .5s linear;
+}
+.sectionTwo .myWork .image h2{ 
+    font-size: 1.2rem;
+    text-align: center;
+}
+.sectionTwo .myWork .image img:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+}
+.sectionTwo .myWork .siteWeb,.sectionTwo .myWork .logiciel,.sectionTwo .myWork .appWeb {
+    position: relative;
+
+}
+.sectionTwo .myWork .siteWeb .workOnePopUp,.sectionTwo .myWork .logiciel .workTwoPopUp
+,.sectionTwo .myWork .appWeb .workThreePopUp{
+    display: none;
+}
+.sectionTwo .myWork .siteWeb .initial,.sectionTwo .myWork .logiciel .initial,
+.sectionTwo .myWork .appWeb .initial{
+    display: none;
+    width: 100%;
+    background-color: #0e1221;
+    border: .5px solid #0e1221;
+    box-shadow: 0px -20px 40px #0e1221;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+    position: absolute;
+    z-index: 22;
+    top: 25%;
+    animation: montre .5s linear;
+}
+.sectionTwo .myWork .siteWeb .workOnePopUp p a{
+    text-decoration: underline;
+    color: #67bce7;
+    cursor: pointer;
+}
+.sectionThree{
+    margin-top: 80px;
+    width: 100%;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectionThree h2{
+    margin-bottom: 100px;
+    font-size: 2.2rem;
+}
+.sectionThree .contacts{
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.sectionThree .contacts .Contact1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.sectionThree .contacts .Contact1 a{
+    text-decoration: none;   
+    font-size: 2rem;
+}
+.sectionThree .contacts .Contact1 .call_whatsapp{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.sectionThree .contacts .Contact1 .call_whatsapp .whatsapp{
+    margin-bottom:40px;
+}
+.sectionThree .contacts .Contact1 .call_whatsapp .whatsapp,.sectionThree .contacts .Contact1 .mailto,
+.sectionThree .contacts .Contact1 .call_whatsapp .call{
+    display: flex;
+    align-items: center;
+    color: #0067d4;
+}
+.sectionThree .contacts .Contact1 .mailto a{
+    color: #0067d4;
+    padding: 0 1.2rem;
+}
+.sectionThree .contacts .Contact1 .call_whatsapp .whatsapp p,.sectionThree .contacts .Contact1 .call_whatsapp .call p{
+    padding: 0 1.2rem;
+}
+
+.sectionThree .contacts .Contact1  ion-icon {
+    font-size: 2.8rem;
+
+}
+.sectionThree .contacts .Contact1 p{
+    font-size: 1.5rem;
+}
+.sectionThree .contacts .Contact1 nav{
+    width: 60%;
+    display:flex;
+    justify-content: space-between;
+}
+.sectionThree .contacts .Contact1 nav a{
+    color: #0067d4;
+}
+.sectionThree .contacts .Contact2{
+   width: 100%;
+}
+.sectionThree .contacts .Contact2 input,textarea{
+    background: #0e1221;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    width: 100%;
+    color: #e0e0e0;
+}
+.sectionThree .contacts .Contact2 form{
+    position: relative  ;
+    
+}
+.sectionThree .contacts .Contact2 form .span{
+   display: none;
+}
+.sectionThree .contacts .Contact2 form .initialerror{
+    width: 50%;
+    background-color: #e0e0e0a7;
+    border: .5px solid #0e1221;
+    box-shadow: 0px -20px 40px #0e1221;
+    border-radius: 40px;
+    padding: 40px;
+    color: #e40d0d;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    z-index: 1000;
+    animation: montre .5s linear;
+}
+@keyframes montre {
+    0%{
+        transform:translate(0,30%);
+    }
+    100%{
+        transform:translate(0,0);
+    }
+}
+.sectionThree .contacts .Contact2 #btn{
+    background-color: #e40d0d;
+    font-size: 25px;
+    color: #e0e0e0;
+    cursor: pointer;
+    transition:all .5s linear;
+}
+.sectionThree .contacts .Contact2 #btn:hover{
+    cursor: pointer;
+    background-color: #0e1221;
+}
+footer{
+    width: 100%;
+    background-color: #060917;
+    padding: 1.2rem;
+    color: #5d5f60;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:.5px solid #5d5f60;
+    bottom: 0;
+}
+footer .cpr p span{
+    font-style: italic;
+}
+
+
+
+@media only screen and (max-width:640px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+    header .navbar{
+        display:none;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .home .infoPrincipales h2{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .home .infoPrincipales p{
+        font-size: 2rem;
+        margin: 20px 0;
+        text-align: center;
+        
+    }
+    .sectionOne h1{
+        font-size: 1.5rem
+    }
+    .myservices{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;  
+        gap: 60px;
+        padding: 15px;
+        margin: 2rem 0 0 0;
+    }
+    .myservices .servicesMicrosoft,
+    .myservices .servicesWebSites, 
+    .myservices .servicesElectricité{
+        background: #060917a5;
+        box-shadow: -1px 1px 2px #e40d0d;
+        text-align: start;
+        padding: 20px;
+        width: 100%;
+        transition:all .5s linear;
+    }
+    .myservices .servicesMicrosoft h2,
+    .myservices .servicesWebSites h2, 
+    .myservices .servicesElectricité h2{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    .sectionTwo{
+        padding: 0;
+    }
+    .sectionTwo .myWork{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    .sectionTwo h1{
+        font-size: 1.5rem;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .sectionThree h2{
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;  
+    }   
+    .sectionThree .contacts .Contact1{
+        width: 100%;
+        display: flex;
+       justify-content: center;
+        gap: 0;
+    }
+    
+    .sectionThree .contacts .Contact1 a{
+        text-decoration: none;   
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp .whatsapp,.sectionThree .contacts .Contact1 .mailto,
+    .sectionThree .contacts .Contact1 .call_whatsapp .call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: #0067d4;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .mailto a{
+        color: #0067d4;
+        padding: 0 ;
+        text-align: center;
+        font-size: .9rem;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp .whatsapp p,.sectionThree .contacts .Contact1 .call_whatsapp .call p{
+        padding: 0 ;
+    }
+    .sectionThree .contacts .Contact1  ion-icon {
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts .Contact1 p{
+        font-size: 1.2rem;
+    }
+    .sectionThree .contacts .Contact1 nav{
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .sectionThree .contacts .Contact1 nav ion-icon{
+        font-size: 1.8rem;
+    }
+    .sectionThree .contacts .Contact1 nav a{
+        color: #0067d4;
+        padding: 0;
+    }
+    .sectionThree .contacts .Contact2 #btn{
+        font-size: 20px;
+    }
+} 
+
+
+
+
+@media only screen and (max-width:380px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+    header .navbar{
+        display:none;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .home .infoPrincipales h2{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .home .infoPrincipales p{
+        font-size: 2rem;
+        margin: 20px 0;
+        text-align: center;
+        
+    }
+    .sectionOne h1{
+        font-size: 1.5rem
+    }
+    .myservices{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;  
+        gap: 60px;
+        padding: 15px;
+        margin: 2rem 0 0 0;
+    }
+    .myservices .servicesMicrosoft,
+    .myservices .servicesWebSites, 
+    .myservices .servicesElectricité{
+        background: #060917a5;
+        box-shadow: -1px 1px 2px #e40d0d;
+        text-align: start;
+        padding: 20px;
+        width: 100%;
+        transition:all .5s linear;
+    }
+    .myservices .servicesMicrosoft h2,
+    .myservices .servicesWebSites h2, 
+    .myservices .servicesElectricité h2{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    .sectionTwo{
+        padding: 0;
+    }
+    .sectionTwo .myWork{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    .sectionTwo h1{
+        font-size: 1.5rem;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .sectionThree h2{
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;  
+    }   
+    .sectionThree .contacts .Contact1{
+        width: 100%;
+        display: flex;
+       justify-content: center;
+        gap: 0;
+    }
+    
+    .sectionThree .contacts .Contact1 a{
+        text-decoration: none;   
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp .whatsapp,.sectionThree .contacts .Contact1 .mailto,
+    .sectionThree .contacts .Contact1 .call_whatsapp .call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: #0067d4;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .mailto a{
+        color: #0067d4;
+        padding: 0 ;
+        text-align: center;
+        font-size: .9rem;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp .whatsapp p,.sectionThree .contacts .Contact1 .call_whatsapp .call p{
+        padding: 0 ;
+    }
+    .sectionThree .contacts .Contact1  ion-icon {
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts .Contact1 p{
+        font-size: 1.2rem;
+    }
+    .sectionThree .contacts .Contact1 nav{
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .sectionThree .contacts .Contact1 nav ion-icon{
+        font-size: 1.8rem;
+    }
+    .sectionThree .contacts .Contact1 nav a{
+        color: #0067d4;
+        padding: 0;
+    }
+    .sectionThree .contacts .Contact2 #btn{
+        font-size: 20px;
+    }
+} 
