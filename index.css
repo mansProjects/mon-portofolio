@@ -364,8 +364,212 @@ footer{
 footer .cpr p span{
     font-style: italic;
 }
-
-
+@media only screen and (max-width:1180px){
+    header{
+        font-size: 1.4rem;
+    }
+    header .navbar{
+        font-size: 1.4rem;
+    }
+    .home .infoPrincipales h2{
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .home .infoPrincipales p{
+        font-size: 1.4rem;
+    }
+    .sectionOne h1{
+        font-size: 1.4rem
+    }
+    .myservices .servicesMicrosoft h2,
+    .myservices .servicesWebSites h2, 
+    .myservices .servicesElectricité h2{
+       
+        font-size: 1.4rem;
+    }  
+    .myservices .servicesMicrosoft #p2,
+    .myservices .servicesWebSites #p2, 
+    .myservices .servicesElectricité #p2{
+        font-size: 1.2rem;
+        word-break: normal;
+    }
+    .sectionTwo h1{
+        font-size: 1.4rem;
+    }
+    .sectionThree h2{
+        font-size: 1.4rem;
+    }
+    .sectionThree .contacts .Contact1 a{
+        font-size: 1.4rem;
+    }
+    .sectionThree .contacts .Contact1 a{  
+        font-size: 1.4rem;
+    }
+    .sectionThree .contacts .Contact1  ion-icon {
+        font-size: 1.8rem;
+    }
+    .sectionThree .contacts .Contact2 #btn{
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (max-width:850px){
+    .myservices .servicesMicrosoft h2,
+    .myservices .servicesWebSites h2, 
+    .myservices .servicesElectricité h2{
+        font-size: 1.2rem;
+    }  
+    .myservices .servicesMicrosoft #p2,
+    .myservices .servicesWebSites #p2, 
+    .myservices .servicesElectricité #p2{
+        font-size: 1rem;
+        word-break: normal;
+    }
+    .sectionThree .contacts .Contact1 .mailto a{
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width:790px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.2rem;
+        font-size: 1.5rem;
+    }
+    header .navbar{
+        display:none;
+    }
+    .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .home .infoPrincipales h2{
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .home .infoPrincipales p{
+        font-size: 2rem;
+        margin: 20px 0;
+        text-align: center;
+        
+    }
+    .sectionOne h1{
+        font-size: 1.5rem
+    }
+    .myservices{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;  
+        gap: 60px;
+        padding: 15px;
+        margin: 2rem 0 0 0;
+    }
+    .myservices .servicesMicrosoft,
+    .myservices .servicesWebSites, 
+    .myservices .servicesElectricité{
+        background: #060917a5;
+        box-shadow: -1px 1px 2px #e40d0d;
+        text-align: start;
+        padding: 20px;
+        width: 100%;
+        transition:all .5s linear;
+    }
+    .myservices .servicesMicrosoft h2,
+    .myservices .servicesWebSites h2, 
+    .myservices .servicesElectricité h2{
+        margin-top: 30px;
+        font-size: 1.5rem;
+    }
+    .sectionTwo{
+        padding: 0;
+    }
+    .sectionTwo .myWork{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+    .sectionTwo h1{
+        font-size: 1.5rem;
+        margin: 50px 0;
+        text-align: center;
+    }
+    .sectionThree h2{
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts{
+        width: 100%;
+        padding: 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:center;
+        align-items: center;  
+    }   
+    .sectionThree .contacts .Contact1{
+        width: 100%;
+        display: flex;
+       justify-content: center;
+        gap: 0;
+    }
+    
+    .sectionThree .contacts .Contact1 a{
+        text-decoration: none;   
+        font-size: 1.5rem;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp .whatsapp,.sectionThree .contacts .Contact1 .mailto,
+    .sectionThree .contacts .Contact1 .call_whatsapp .call{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        color: #0067d4;
+        margin-top: 50px;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .mailto a{
+        color: #0067d4;
+        padding: 0 ;
+        text-align: center;
+        font-size: .9rem;
+        width: 100%;
+    }
+    .sectionThree .contacts .Contact1 .call_whatsapp .whatsapp p,.sectionThree .contacts .Contact1 .call_whatsapp .call p{
+        padding: 0 ;
+    }
+    .sectionThree .contacts .Contact1  ion-icon {
+        font-size: 2rem;
+    }
+    .sectionThree .contacts .Contact1 p{
+        font-size: 2rem;
+    }
+    .sectionThree .contacts .Contact1 nav{
+        width: 100%;
+        display:flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .sectionThree .contacts .Contact1 nav ion-icon{
+        font-size: 2rem;
+    }
+    .sectionThree .contacts .Contact1 nav a{
+        color: #0067d4;
+        padding: 0;
+    }
+    .sectionThree .contacts .Contact2 #btn{
+        font-size: 20px;
+    }
+}
 
 @media only screen and (max-width:640px){
     header{
